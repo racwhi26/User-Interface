@@ -47,137 +47,152 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
+.main_nav {
+	height: 60px;
+	width: 950px;
+	background-color: navy;
+	border-radius: 50px;
+	position: fixed;
+  top: 5px;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+.main_nav ul {
+	margin:0;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
-/* Your code starts here! */ 
-.container {
-  width: 880px;
-  margin: 0 auto;
+.logo_div {
+	display: inline-block;
+	padding-top: 8px;
+	position: fixed;
+	top: 5px;
+	margin-left: 650px;
 }
 
-header nav {
-  display: inline-block;
-  width: 691px;
-  vertical-align: top;
-  margin-top: 35px;
+.main_nav a {
+	text-transform: camel;
+	padding: 20px 10px;
+	display:inline-block;
+	text-decoration: none;
+	color: gray;
+	margin: 10px 12px;
+	vertical-align:middle;
 }
 
-header nav a {
-  margin-right: 65px;
-  font-size: 14px;
-  color: gray;
-  text-decoration: none;
+.main_nav a:hover {
+	animation-name: colorchange;
+	animation-duration: 0.5s;
+}
+ 
+@keyframes colorchange {
+	0% {
+	   opacity: 0.5;
+	   transform: translateX(0);
+	}
+
+	50% {
+		opacity: 1;
+		color: white;
+        transform: translateX(30);
+	}
+
+	100% {
+		opacity: 1.5;
+		color: gold;
+		transform: translateX(0);
+	}
 }
 
-header nav a:hover {
-  text-decoration: underline;
+.logo {
+	display: inline-block;
+	margin-left: 70px;
 }
 
-header nav a:first-child {
-  margin-left: 0;
+.container_two_div {
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	border-bottom: 2px 2px black;
+	padding-bottom: 50px;
 }
 
-header nav a:last-child {
-  margin-right: 0;
+.top_div {
+	display: inline-block;
+	width: 49%;
+	height: auto;
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 30px;
 }
 
-header .logo {
-  margin-top: 25px;
+.top_pic {
+	display: inline-block;
 }
 
-.cta .cta-text {
-  display: inline-block;
-  vertical-align: top;
-  font-size: 77px;
-  margin-top: 120px;
-  text-align: center;
-  padding: 0px 75px;
+h1 {
+	font-size: 60px;
 }
 
-.cta .cta-text button {
-  background: white;
-  vertical-align: top;
-  margin-top: 6px;
-  padding: 8px 44px;
-  font-size: 17px;
-  border: 1px solid black;
-  cursor: pointer;
+.button_get {
+	margin-top: 15px;
+	width: 200px;
+	height: 45px;
 }
 
-.cta .cta-text button:hover {
-  background: black;
-  color: white;
+h2 {
+	font-size: 25px;
 }
 
-.cta img {
-  display: inline-block;
-  margin-top: 69px;
+p {
+	font-family: 'Roboto', sans-serif;
+	text-justify: auto;
+	font-size: 16px;
+	line-height: 1;
+	text-align: justify
 }
 
-.main-content {
-  border-top: 1px solid black;
-  margin-top: 76px;
-  padding-top: 39px;
+.two_column_div {
+	margin: 0 auto;
+	margin-top: 20px;
+	padding-bottom: 30px;
+	width: auto;
 }
 
-.main-content .top-content {
-  padding: 0 10px;
+.text_column1 {
+	display: inline-block;
+	width: 400px;
 }
 
-.main-content .top-content .text-content {
-  width: 410px;
-  display: inline-block;
-  margin-right: 34px;
+.text_column2 {
+	display: inline-block;
+	width: 400px;
+	margin: 0px 0px 0px 40px;
 }
 
-.main-content .top-content .text-content:last-child {
-  margin-right: 0;
+.three_column_container {
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	border-bottom: solid 2px black;
 }
 
-.main-content .middle-img {
-  margin-top: 45px;
+.three_column1 {
+	display: inline-block;
+	width: 250px;
 }
 
-.main-content .bottom-content {
-  margin-top: 37px;
-  padding: 0 10px;
+.three_column2_3 {
+	display: inline-block;
+	width: 250px;
+	margin: 0px 0px 0px 55px;
 }
 
-.main-content .bottom-content .text-content {
-  width: 275px;
-  display: inline-block;
-  margin-right: 12px;
+address {
+	margin: 20px;
+	line-height: 1.5;
 }
 
-.main-content .bottom-content .text-content:last-child {
-  margin-right: 0;
-}
-
-.contact {
-  margin-top: 57px;
-  border-top: 1px solid black;
-  padding: 39px 10px 0;
-}
-
-.contact p {
-  margin: 20px 0;
-}
-
-footer {
-  margin: 32px 0;
-  text-align: center;
-  font-size: 14px;
+.copyright {
+	text-align: center;
+	margin-bottom: 25px;
 }

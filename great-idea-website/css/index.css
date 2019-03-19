@@ -50,10 +50,11 @@ table {
 .main_nav {
 	height: 60px;
 	width: 950px;
-	background-color: navy;
+	background-color: lightblue;
 	border-radius: 50px;
 	position: fixed;
   top: 5px;
+  text-size: 20px;
 }
 
 .main_nav ul {
@@ -91,13 +92,13 @@ table {
 
 	50% {
 		opacity: 1;
-		color: white;
-        transform: translateX(30);
+		color: blue;
+    transform: translateX(30);
 	}
 
 	100% {
 		opacity: 1.5;
-		color: gold;
+		color: red;
 		transform: translateX(0);
 	}
 }

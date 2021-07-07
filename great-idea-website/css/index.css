@@ -1,3 +1,4 @@
+@import url(//fonts.googleapis.com/css?family=Georgia);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,20 +48,153 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
+.main_nav {
+	height: 60px;
+	width: 950px;
+	background-color: lightblue;
+	border-radius: 50px;
+	position: fixed;
+  top: 5px;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+.main_nav ul {
+	margin:0;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+.logo_div {
+	display: inline-block;
+	padding-top: 8px;
+	position: fixed;
+	top: 5px;
+	margin-left: 650px;
 }
 
-/* Your code starts here! */
+.main_nav a {
+	text-transform: camel;
+	padding: 20px 10px;
+	display:inline-block;
+	text-decoration: none;
+	color: gray;
+	margin: 10px 12px;
+	vertical-align:middle;
+}
+
+.main_nav a:hover {
+	animation-name: colorchange;
+	animation-duration: 0.5s;
+}
+ 
+@keyframes colorchange {
+	0% {
+	   opacity: 0.5;
+	   transform: translateX(0);
+	}
+
+	50% {
+		opacity: 1;
+		color: blue;
+    transform: translateX(30);
+	}
+
+	100% {
+		opacity: 1.5;
+		color: red;
+		transform: translateX(0);
+	}
+}
+
+.logo {
+	display: inline-block;
+	margin-left: 70px;
+}
+
+.container_two_div {
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	border-bottom: 2px 2px black;
+	padding-bottom: 50px;
+}
+
+.top_div {
+	display: inline-block;
+	width: 49%;
+	height: auto;
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 30px;
+}
+
+.top_pic {
+	display: inline-block;
+}
+
+h1 {
+	font-size: 60px;
+  font-family: Georgia;
+}
+
+.button_get {
+	margin-top: 15px;
+	width: 200px;
+	height: 45px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	text-justify: auto;
+	font-size: 16px;
+	line-height: 1;
+	text-align: justify
+}
+
+.two_column_div {
+	margin: 0 auto;
+	margin-top: 20px;
+	padding-bottom: 30px;
+	width: auto;
+}
+
+.text_column1 {
+	display: inline-block;
+	width: 400px;
+}
+
+.text_column2 {
+	display: inline-block;
+	width: 400px;
+	margin: 0px 0px 0px 40px;
+}
+
+.three_column_container {
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	border-bottom: solid 2px black;
+}
+
+.three_column1 {
+	display: inline-block;
+	width: 250px;
+}
+
+.three_column2_3 {
+	display: inline-block;
+	width: 250px;
+	margin: 0px 0px 0px 55px;
+}
+
+address {
+	margin: 20px;
+	line-height: 1.5;
+}
+
+.copyright {
+	text-align: center;
+	margin-bottom: 25px;
+}
